@@ -1,69 +1,24 @@
 // http://www.codewars.com/kata/571edd157e8954bab500032d
+// не розумію чому у цій задачі не проходить const
 
-var v1 = 50, v2 = 100, v3 = 150, v4 = 200, v5 = 2, v6 = 250;
-function equal1() {
-  var a = v1;   
-  var b = v1;   
-  
-  return a + b;
-}
-//Please refer to the example above to complete the following functions
-function equal2() {
-  var a = v6;   //set number value to a
-  var b = v3;   //set number value to b
-  
-  return a - b;
-}
-function equal3() {
-  var a = v5;   //set number value to a
-  var b = v1;   //set number value to b
-  
-  return a * b;
-}
-function equal4() {
-  var a = v4;   //set number value to a
-  var b = v5;   //set number value to b
-  
-  return a / b;
-}
-function equal5() {
-  var a = v2;   //set number value to a
-  var b = v3;   //set number value to b
-  
-  return a % b;
-}
+let v1 = 50, v2 = 100, v3 = 150, v4 = 200, v5 = 2, v6 = 250;
+let equal1 = () => v1 + v1;
+let equal2 = () => v6 - v3;
+let equal3 = () => v5 * v1;
+let equal4 = () => v4 / v5;
+let equal5 = () => v2 % v3;
 
 
 // http://www.codewars.com/kata/571edea4b625edcb51000d8e
+// і в цій задачі const теж помилка, пропускає тільки через var або let
 
 var a1 = "A", a2 = "a", b1 = "B", b2 = "b", c1 = "C", c2 = "c", d1 = "D", d2 = "d", e1 = "E", e2 = "e", n1 = "N", n2 = "n";
-function Dad() {
-  //select some variable to combine "Dad"
-  return d1 + a2 + d2;
-}
-function Bee() {
-  //select some variable to combine "Bee"
-  return b1 + e2 + e2;
-}
-function banana() {
-  //select some variable to combine "banana"
-  return b2 + a2 + n2 + a2 + n2 + a2;
-}
-
-//answer some questions if you finished works above
-function answer1() {
-  //the answer should be "yes" or "no"
-  return "no";
-}
-function answer2() {
-  //the answer should be "yes" or "no"
-  return "no";
-}
-function answer3() {
-  //the answer should be "yes" or "no"
-  return "yes";
-}
-
+var Dad = () => d1 + a2 + d2;
+var Bee = () => b1 + e2 + e2;
+var banana = () => b2 + a2 + n2 + a2 + n2 + a2;
+var answer1 = () => "no";
+var answer2 = () => "no";
+var answer3 = () => "yes";
 
 // http://www.codewars.com/kata/571effabb625ed9b0600107a
 
@@ -75,9 +30,9 @@ const pushElement = (arr) => {
   arr.push(el);
   
   return arr;
-}
+};
 const popElement = (arr) => {
   arr.pop();
   
   return arr;
-}
+};
