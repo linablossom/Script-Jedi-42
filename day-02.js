@@ -36,3 +36,8 @@ const popElement = (arr) => {
   
   return arr;
 };
+
+
+http://www.codewars.com/kata/571f1eb77e8954a812000837
+
+const animal = (obj) => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
