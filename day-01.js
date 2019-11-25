@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/training-js-number-1-create-your-first-js-function-and-print-helloworld/train/javascript
+// http://www.codewars.com/kata/571ec274b1c8d4a61c0000c8
 
 function helloWorld() {
   var str = "Hello world!";
