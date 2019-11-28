@@ -8,16 +8,23 @@ const padIt = (str, n) => {
 };
 // http://www.codewars.com/kata/5721a78c283129e416000999
 const pickIt = arr => {
-  cnst odd = [], even = [];
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] % 2 === 0 ? even.push(arr[i]) : odd.push(arr[i]);
+  const odd = [], even = [];
+  for (let el of arr) {
+    (el % 2 === 0 ? even : odd).push(el);
   }
   return [odd, even];
 };
-const pickIt = arr => {
-  const odd = [], even = [];
-  for (let res of arr) {
-    ((res % 2) ? odd : even).push(res);
+// http://www.codewars.com/kata/5721c189cdd71194c1000b9b
+const grabDoll = dolls => {
+  const bag = [];
+  for (let doll of dolls) {
+    if (["Hello Kitty", "Barbie doll"].indexOf(doll) === -1) {
+      continue;
+    }
+    bag.push(doll);
+    if (bag.length === 3) {
+      break;
+    }
   }
-  return [odd, even];
+  return bag;
 };
