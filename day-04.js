@@ -28,3 +28,15 @@ const grabDoll = dolls => {
   }
   return bag;
 };
+// http://www.codewars.com/kata/5722b3f0bd5583cf44001000
+function giveMeFive(obj){
+  const items = [];
+  for (let key in obj) {
+    if (key.length === 5) {
+      items.push(key);
+    }
+    if (obj[key].length === 5) {
+      items.push(obj[key])
+    }
+  }
+  return items;
