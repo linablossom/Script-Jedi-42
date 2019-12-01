@@ -20,3 +20,6 @@ function whatNumberIsIt(n) {
     
     return `Input number is ${n}`;
 }
+// https://www.codewars.com/kata/57238ceaef9008adc7000603
+const toHex = n => ("0" + n.toString(16)).slice(-2);
+const colorOf = (r,g,b) => `#${toHex(r)}${toHex(g)}${toHex(b)}`;
