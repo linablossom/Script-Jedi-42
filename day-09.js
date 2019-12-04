@@ -8,7 +8,6 @@ function cutIt(arr) {
   
   return arr.map(item => item.slice(0, minLength));
 }
-
 // http://www.codewars.com/kata/57277a31e5e51450a4000010
 const firstToLast = (str, c) => {
   const firstIndex = str.indexOf(c);
@@ -17,8 +16,7 @@ const firstToLast = (str, c) => {
   if (lastIndex === -1) return 0;
   
   return lastIndex - firstIndex;
-}
-
+};
 // https://www.codewars.com/kata/57280481e8118511f7000ffa
 const splitAndMerge = (str, sp) => 
   str.split(' ').map(word => word.split('').join(sp)).join(' ');
