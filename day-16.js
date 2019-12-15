@@ -34,10 +34,11 @@ const countGrade = scores =>
 // http://www.codewars.com/kata/57308546bd9f0987c2000d07
 function mirrorImage(arr){
   let match = [-1, -1];
-  arr.forEach((num, numIndex) => {
-    const oppositeNum = +(num + '').split('').reverse().join('');
-    if (arr.find((item, itemIndex) => itemIndex > numIndex && item === oppositeNum)) {
-      match = [num, oppositeNum];
+  arr.some((num, numIndex) => {
+    const oppositeNum = (num + '').split('').reverse().join('');
+    if (arr.find((item, itemIndex) => itemIndex === numIndex + 1 && item + '' === oppositeNum)) {
+      match = [+num, +oppositeNum];
+      return true;
     }
   });
   
