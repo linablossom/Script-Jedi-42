@@ -20,4 +20,5 @@ function last (...list) {
   if (Array.isArray(list[0])) {
     return list[0][list[0].length - 1];
   }
+  return list[0];
 }
